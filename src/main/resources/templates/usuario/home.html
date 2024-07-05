@@ -29,8 +29,8 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">Bienvenido a Spring Ecommerce 2021</h1>
-        <p class="lead">Tu tienda de productos en Línea</p>
+        <h1 class="display-3">Bienvenido a Tienda PetShop Online</h1>
+      <p class="lead">Tu tienda de productos en Línea</p>
       </header>
 
       <!-- Page Features -->
@@ -43,7 +43,7 @@
               <p class="card-text" th:text="${producto.nombre}"></p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-success">Ver producto</a>
+              <a th:href="@{/productohome/{id} (id=${producto.id}) }" class="btn btn-success">Ver producto</a>
             </div>
           </div>
         </div>
